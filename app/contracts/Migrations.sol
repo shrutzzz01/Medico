@@ -1,8 +1,8 @@
 pragma solidity ^0.5.1;
 
-contract Mirgations{
+contract Migrations {
   address public owner;
-  uint public last_comapleted_migration;
+  uint public last_completed_migration;
   modifier restricted() {
     if (msg.sender == owner) _;
   }
